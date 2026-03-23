@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-red-tango: #e14830;
+  --color-black-tango: #6e605e;
+  --color-white-tango: #fef6f6;
+  --color-background-tango: #fdf6f4;
+  --color-furrballCopyright-tango: #d5cfce;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Fonseca Rounded';
+  src: url('./Font/FonsecaRounded.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-fonseca {
+  font-family: 'Fonseca Rounded', sans-serif;
+}
+
+
+
+.duoTangoImg {
+  object-fit: cover; /* L'image est cropée pour remplir l'espace sans déformation */
+  object-position: top; /* Centre l'image */
+  margin-left: 150px;
+  max-width: 75%;
+  max-height: 95%;
+  size-adjust:inherit;
+}
+
+.gradient-circle {
+  background: radial-gradient(circle at 100% 42%, rgba(225, 72, 48, 0.4), transparent 55%);
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .force-mobile {
+      display: block !important;
+  }
+}
